@@ -81,31 +81,31 @@ require 'rspec'
 #
 #end
 
-class World
-  attr_accessor :cells
-  def initialize
-    @cells = []
-  end
-
-  def tick!
-    cells.each do | cell |
-      #Rule 1 & Rule 3
-      if cell.neighbors.count < 2 || cell.neighbors.count > 3
-        cell.die!
-      end
-
-      #Rule 4
-      cell.neighbors.each do | neighbor |
-        if neighbor.neighbors.count == 3
-          cells << neighbor unless cells.include?(neighbor)
-        end
-      end
-
-    end
-
-  end
-
-end
+#class World
+#  attr_accessor :cells
+#  def initialize
+#    @cells = []
+#  end
+#
+#  def tick!
+#    cells.each do | cell |
+#      #Rule 1 & Rule 3
+#      if cell.neighbors.count < 2 || cell.neighbors.count > 3
+#        cell.die!
+#      end
+#
+#      #Rule 4
+#      cell.neighbors.each do | neighbor |
+#        if neighbor.neighbors.count == 3
+#          cells << neighbor unless cells.include?(neighbor)
+#        end
+#      end
+#
+#    end
+#
+#  end
+#
+#end
 
 #describe 'game of life' do
 #
@@ -226,7 +226,7 @@ end
 #end
 
 class Cell
-  attr_accessor :x, :y, :living_status
+  attr_accessor :x, :y, :living
 
   def initialize( x, y, living_status )
     @x = x
@@ -240,13 +240,33 @@ class Cell
     (xoffset.abs <= 1) && (yoffset.abs <= 1)
   end
 
+  def living?
+    @living_status
+  end
+
+end
+
+class World
+  attr_accessor :cells
+
+  def initialize cells
+    @cells = cells
+  end
+
+  def tick!
+
+  end
+
+  def live_cells
+    @cells.select(&:living?)
+  end
 end
 
 describe Cell do
   subject { Cell.new(1, 2, true) }
   its(:x) { should eq 1 }
   its(:y) { should eq 2 }
-  its(:living_status) { should be_true }
+  its(:living?) { should be_true }
 
   describe "#is_neighbor?" do
     let(:neighbor) { Cell.new(1, 1, true) }
@@ -258,5 +278,23 @@ describe Cell do
       expect(subject.is_neighbor?(dead_neighbor)).to be_true
       expect(subject.is_neighbor?(non_neighbor)).to be_false
     end
+  end
+
+end
+
+describe World do
+  let(:living_cell) { Cell.new(1,1, true)}
+  subject { World.new([living_cell]) }
+
+
+  it "will return a collection of live cells" do
+    expect(subject.live_cells.count).to eq(1)
+  end
+
+  it { should respond_to(:tick!) }
+
+  # Rule 1
+  it "should have any live cell with fewer than two live neighbors die, as if caused by under-population" do
+
   end
 end
