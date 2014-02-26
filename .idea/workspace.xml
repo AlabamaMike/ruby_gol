@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57f17987-b384-420c-a67a-ce3618a38eb2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/game_of_life.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="game_of_life.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,19 +53,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gol_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gol_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gol_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.0" vertical-offset="1725" max-vertical-offset="2235">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.43333334" vertical-offset="0" max-vertical-offset="555">
+            <state line="134" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.6333333" vertical-offset="1725" max-vertical-offset="2235">
               <folding />
             </state>
           </provider>
@@ -471,15 +468,23 @@
       <created>1393452545290</created>
       <updated>1393452545290</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add gitignore">
+      <created>1393454569938</created>
+      <updated>1393454569938</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add gitignore&#10;">
+      <created>1393454599793</created>
+      <updated>1393454599794</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="109" width="1813" height="778" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -513,7 +518,9 @@
     </option>
     <MESSAGE value="add World with tests" />
     <MESSAGE value="change World initializer to generate an initial matrix of cells and some refactoring&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="change World initializer to generate an initial matrix of cells and some refactoring&#10;" />
+    <MESSAGE value="add gitignore" />
+    <MESSAGE value="add gitignore&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -620,16 +627,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gol_spec.rb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.0" vertical-offset="1725" max-vertical-offset="2235">
+        <state line="13" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.43333334" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/gol_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.43333334" vertical-offset="0" max-vertical-offset="555">
+        <state line="134" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.6333333" vertical-offset="1725" max-vertical-offset="2235">
           <folding />
         </state>
       </provider>
