@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57f17987-b384-420c-a67a-ce3618a38eb2" name="Default" comment="" />
+    <list default="true" id="57f17987-b384-420c-a67a-ce3618a38eb2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gol_spec.rb" afterPath="$PROJECT_DIR$/gol_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="game_of_life.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,13 +28,13 @@
     <SUITE FILE_PATH="coverage/game_of_life@game_of_life_should_have_any_dead_cell_with_exactly_three_live_neighbors_become_a_live_cell__as_if_by_reproduction__game_of_life.coverage" NAME="game of life should have any dead cell with exactly three live neighbors become a live cell, as if by reproduction: game_of_life Coverage Results" MODIFIED="1393079571678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
     <SUITE FILE_PATH="coverage/game_of_life@game_of_life_cell_helper_methods_detects_a_neighbor_to_the_south__game_of_life.coverage" NAME="game of life cell helper methods detects a neighbor to the south: game_of_life Coverage Results" MODIFIED="1393076639779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
     <SUITE FILE_PATH="coverage/game_of_life@Cell__game_of_life.coverage" NAME="Cell: game_of_life Coverage Results" MODIFIED="1393280715434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
-    <SUITE FILE_PATH="coverage/game_of_life@game_of_life_cell_helper_methods_lives__game_of_life.coverage" NAME="game of life cell helper methods lives: game_of_life Coverage Results" MODIFIED="1393080100645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
     <SUITE FILE_PATH="coverage/game_of_life@game_of_life__game_of_life.coverage" NAME="game of life: game_of_life Coverage Results" MODIFIED="1393074505835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
+    <SUITE FILE_PATH="coverage/game_of_life@game_of_life_cell_helper_methods_lives__game_of_life.coverage" NAME="game of life cell helper methods lives: game_of_life Coverage Results" MODIFIED="1393080100645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
     <SUITE FILE_PATH="coverage/game_of_life@game_of_life_cell_helper_methods_dies__game_of_life.coverage" NAME="game of life cell helper methods dies: game_of_life Coverage Results" MODIFIED="1393075503160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
     <SUITE FILE_PATH="coverage/game_of_life@game_of_life_cell_helper_methods_detects_a_neighbor_to_the_south_east__game_of_life.coverage" NAME="game of life cell helper methods detects a neighbor to the south east: game_of_life Coverage Results" MODIFIED="1393076881928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
-    <SUITE FILE_PATH="coverage/game_of_life@game_of_life_cell_helper_methods_detects_a_neighbor_to_the_west__game_of_life.coverage" NAME="game of life cell helper methods detects a neighbor to the west: game_of_life Coverage Results" MODIFIED="1393075849370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
     <SUITE FILE_PATH="coverage/game_of_life@game_of_life_cell_helper_methods_detects_a_neighbor_to_the_north__game_of_life.coverage" NAME="game of life cell helper methods detects a neighbor to the north: game_of_life Coverage Results" MODIFIED="1393074576093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
-    <SUITE FILE_PATH="coverage/game_of_life@Run_spec__gol_spec___game_of_life.coverage" NAME="Run spec 'gol_spec': game_of_life Coverage Results" MODIFIED="1393282230553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
+    <SUITE FILE_PATH="coverage/game_of_life@game_of_life_cell_helper_methods_detects_a_neighbor_to_the_west__game_of_life.coverage" NAME="game of life cell helper methods detects a neighbor to the west: game_of_life Coverage Results" MODIFIED="1393075849370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
+    <SUITE FILE_PATH="coverage/game_of_life@Run_spec__gol_spec___game_of_life.coverage" NAME="Run spec 'gol_spec': game_of_life Coverage Results" MODIFIED="1393452483692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="game_of_life" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -47,7 +51,7 @@
       <file leaf-file-name="gol_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gol_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="239" column="41" selection-start="5657" selection-end="5657" vertical-scroll-proportion="0.29411766" vertical-offset="3410" max-vertical-offset="4005">
+            <state line="134" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.7037037" vertical-offset="1725" max-vertical-offset="2235">
               <folding />
             </state>
           </provider>
@@ -71,6 +75,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -82,10 +89,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="65" />
+    <option name="y" value="109" />
+    <option name="width" value="1813" />
+    <option name="height" value="778" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -141,7 +150,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="RSpec.Run spec 'gol_spec': game_of_life">
     <configuration default="false" name="game of life cell helper methods lives: game_of_life" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
@@ -445,30 +454,36 @@
       <created>1393072200934</created>
       <updated>1393072200934</updated>
     </task>
+    <task id="LOCAL-00001" summary="add World with tests">
+      <created>1393348096267</created>
+      <updated>1393348096267</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="65" y="109" width="1813" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16240682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39864865" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17391305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39185393" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262548" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23455057" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -483,13 +498,31 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="add World with tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add World with tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gol_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="288" column="0" selection-start="6553" selection-end="6553" vertical-scroll-proportion="0.0" vertical-offset="3667" max-vertical-offset="4575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gol.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding>
+            <marker date="1393072930000" expanded="true" signature="29:38" placeholder=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gol_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="0" selection-start="1752" selection-end="1752" vertical-scroll-proportion="0.0" vertical-offset="1314" max-vertical-offset="3495">
@@ -513,15 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gol.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding>
-            <marker date="1393072930000" expanded="true" signature="29:38" placeholder=" ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392@sac/gems/rspec-core-2.14.7/lib/rspec/core/runner.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.33239436" vertical-offset="137" max-vertical-offset="1395" />
@@ -539,9 +563,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392@sac/gems/rspec-expectations-2.14.5/lib/rspec/expectations/syntax.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.33150685" vertical-offset="659" max-vertical-offset="2550">
-          <folding />
-        </state>
+        <state line="52" column="0" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.33150685" vertical-offset="659" max-vertical-offset="2550" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392@sac/gems/rspec-core-2.14.7/lib/rspec/core/memoized_helpers.rb">
@@ -568,9 +590,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gol.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding>
+            <marker date="1393072930000" expanded="true" signature="29:38" placeholder=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392@sac/gems/rspec-core-2.14.7/lib/rspec/core/metadata.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="0" selection-start="3363" selection-end="3363" vertical-scroll-proportion="0.33333334" vertical-offset="1350" max-vertical-offset="4575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gol_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="41" selection-start="5657" selection-end="5657" vertical-scroll-proportion="0.29411766" vertical-offset="3410" max-vertical-offset="4005">
+        <state line="134" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.7037037" vertical-offset="1725" max-vertical-offset="2235">
           <folding />
         </state>
       </provider>

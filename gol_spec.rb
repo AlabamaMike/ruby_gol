@@ -1,185 +1,6 @@
 require 'rspec'
 
-#class Cell
-#  attr_accessor :world, :x, :y
-#
-#  def initialize(world, x=0, y=0)
-#    @world = world
-#    @x = x
-#    @y = y
-#    world.cells << self
-#  end
-#
-#  def die!
-#    world.cells -= [ self ]
-#  end
-#
-#  def live!
-#    world.cells += [ self ]
-#  end
-#
-#  def dead?
-#    !world.cells.include?(self)
-#  end
-#
-#  def alive?
-#    world.cells.include?(self)
-#  end
-#
-#  def neighbors
-#    @neighbors = []
-#    world.cells.each do |cell|
-#      #Detect cells to the north
-#      if self.x == cell.x && self.y == cell.y - 1
-#        @neighbors << cell
-#      end
-#
-#      #Detect cells to the north west
-#      if self.x == cell.x + 1 && self.y == cell.y - 1
-#        @neighbors << cell
-#      end
-#
-#      #Detect cells to the north east
-#      if self.x == cell.x - 1 && self.y == cell.y - 1
-#        @neighbors << cell
-#      end
-#
-#      #Detect cells to the west
-#      if self.x == cell.x + 1 && self.y == cell.y
-#        @neighbors << cell
-#      end
-#
-#      #Detect cells to the east
-#      if self.x == cell.x - 1 && self.y == cell.y
-#        @neighbors << cell
-#      end
-#
-#      #Detect cells to the south
-#      if self.x == cell.x  && self.y == cell.y + 1
-#        @neighbors << cell
-#      end
-#
-#      #Detect cells to the south west
-#      if self.x == cell.x + 1  && self.y == cell.y + 1
-#        @neighbors << cell
-#      end
-#
-#      #Detect cells to the south east
-#      if self.x == cell.x - 1  && self.y == cell.y + 1
-#        @neighbors << cell
-#      end
-#
-#    end
-#
-#    @neighbors
-#  end
-#
-#  def spawn_at(x, y)
-#    Cell.new(world, x, y)
-#  end
-#
-#
-#end
 
-#class World
-#  attr_accessor :cells
-#  def initialize
-#    @cells = []
-#  end
-#
-#  def tick!
-#    cells.each do | cell |
-#      #Rule 1 & Rule 3
-#      if cell.neighbors.count < 2 || cell.neighbors.count > 3
-#        cell.die!
-#      end
-#
-#      #Rule 4
-#      cell.neighbors.each do | neighbor |
-#        if neighbor.neighbors.count == 3
-#          cells << neighbor unless cells.include?(neighbor)
-#        end
-#      end
-#
-#    end
-#
-#  end
-#
-#end
-
-#describe 'game of life' do
-#
-#  let(:world) { World.new }
-#
-#  context 'cell helper methods' do
-#    subject { Cell.new(world) }
-#
-#    it 'spawns at' do
-#      cell = subject.spawn_at(3,3)
-#      cell.is_a?(Cell).should be_true
-#      cell.x.should eq(3)
-#      cell.y.should eq(3)
-#      cell.world.should == subject.world
-#    end
-#
-#    it 'detects a neighbor to the north' do
-#      cell = subject.spawn_at(0,1)
-#      subject.neighbors.count.should eq(1)
-#    end
-#
-#    it 'detects a neighbor to the north west' do
-#      cell = subject.spawn_at(-1, 1)
-#      subject.neighbors.count.should eq (1)
-#    end
-#
-#    it 'detects a neighbor to the north east' do
-#      cell = subject.spawn_at(1,1)
-#      subject.neighbors.count.should eq (1)
-#    end
-#
-#    it 'detects a neighbor to the west' do
-#      cell = subject.spawn_at(-1, 0)
-#      subject.neighbors.count.should eq (1)
-#    end
-#
-#    it 'detects a neighbor to the east' do
-#      cell = subject.spawn_at(1,0)
-#      subject.neighbors.count.should eq (1)
-#    end
-#
-#    it 'detects a neighbor to the south' do
-#      cell = subject.spawn_at(0, -1)
-#      subject.neighbors.count.should eq (1)
-#    end
-#
-#    it 'detects a neighbor to the south west' do
-#      cell = subject.spawn_at(-1, -1)
-#      subject.neighbors.count.should eq (1)
-#    end
-#
-#    it 'detects a neighbor to the south east' do
-#      cell = subject.spawn_at(1, -1)
-#      subject.neighbors.count.should eq (1)
-#    end
-#
-#    it 'detects a neighbor to the south and north ' do
-#      south_cell = subject.spawn_at(0, -1)
-#      north_cell = subject.spawn_at(0, 1)
-#      subject.neighbors.count.should eq (2)
-#    end
-#
-#    it 'dies' do
-#      subject.die!
-#      subject.world.cells.should_not include(subject)
-#    end
-#
-#    it 'lives' do
-#      subject.live!
-#      subject.world.cells.should include(subject)
-#    end
-#
-#  end
-#
 #  context 'cellular automata rules' do
 #    # Testing Rule 1
 #    it 'should have any live cell with fewer than two live neighbors die, as if caused by under-population.' do
@@ -231,7 +52,7 @@ class Cell
   def initialize( x, y, living_status )
     @x = x
     @y = y
-    @living_status = living_status
+    @living = living_status
   end
 
   def is_neighbor?(cell)
@@ -241,7 +62,7 @@ class Cell
   end
 
   def living?
-    @living_status
+    @living
   end
 
 end
@@ -249,13 +70,24 @@ end
 class World
   attr_accessor :cells
 
-  def initialize cells
-    @cells = cells
+  def initialize(x, y)
+    @cells = []
+    for i in (0...x)
+      for j in (0...y)
+        @cells << Cell.new(i, j, false)
+      end
+    end
   end
 
-  def tick!
+  #def tick!
+  #  #Rule 1
+  #  live_cells.each do | cell |
+  #    if cell.neighbors.select(&:living?).count < 2
+  #      cell.living = false
+  #    end
+  #  end
 
-  end
+  #end
 
   def live_cells
     @cells.select(&:living?)
@@ -283,18 +115,30 @@ describe Cell do
 end
 
 describe World do
-  let(:living_cell) { Cell.new(1,1, true)}
-  subject { World.new([living_cell]) }
+  subject { World.new(50, 50) }
 
+
+  it "creates a world of dead cells" do
+    expect(subject.cells.count).to eq(2500)
+  end
+
+  it "can find a cell by coordinates" do
+    lookup_cell = subject.cells.find{ |cell| cell.x == 1 && cell.y == 1}
+    expect(lookup_cell).to be_a(Cell)
+  end
 
   it "will return a collection of live cells" do
+    living_cell = subject.cells.find{ |cell| cell.x == 1 && cell.y == 1}
+    living_cell.living = true
     expect(subject.live_cells.count).to eq(1)
   end
 
-  it { should respond_to(:tick!) }
+  xit { should respond_to(:tick!) }
 
   # Rule 1
-  it "should have any live cell with fewer than two live neighbors die, as if caused by under-population" do
-
+  xit "should have any live cell with fewer than two live neighbors die, as if caused by under-population" do
+    subject.tick!
+    expect(subject.live_cells.count).to eq(0)
   end
+
 end
