@@ -1,51 +1,5 @@
 require 'rspec'
 
-
-#  context 'cellular automata rules' do
-#    # Testing Rule 1
-#    it 'should have any live cell with fewer than two live neighbors die, as if caused by under-population.' do
-#      cell = Cell.new(world)
-#      cell.spawn_at(2,0)
-#      world.tick!
-#      cell.should be_dead
-#    end
-#
-#    # Testing Rule 2
-#    it 'should have any live cell with two or three live neighbors live on to the next generation.' do
-#      cell = Cell.new(world)
-#      new_cell = cell.spawn_at(1,0)
-#      other_cell = cell.spawn_at(-1, 0)
-#      world.tick!
-#      cell.should be_alive
-#    end
-#
-#    # Testing Rule 3
-#    it 'should have any live cell with more than three live neighbors die, as if by overcrowding.' do
-#      cell = Cell.new(world)
-#      north_neighbor = cell.spawn_at(0,1)
-#      east_neighbor = cell.spawn_at(1,0)
-#      north_east_neighbor = cell.spawn_at(1,1)
-#      south_neighbor = cell.spawn_at(0, -1)
-#      world.tick!
-#      cell.should be_dead
-#    end
-#
-#    # Testing Rule 4
-#    it 'should have any dead cell with exactly three live neighbors become a live cell, as if by reproduction' do
-#      cell = Cell.new(world)
-#      world.tick!
-#      # Kill the cell, confirm it died
-#      cell.should be_dead
-#      north_neighbor = cell.spawn_at(0,1)
-#      east_neighbor = cell.spawn_at(1,0)
-#      south_neighbor = cell.spawn_at(0,-1)
-#      world.tick!
-#      # Cell should be alive via reproduction
-#      cell.should be_alive
-#    end
-#  end
-#end
-
 class Cell
   attr_accessor :x, :y, :living
 
